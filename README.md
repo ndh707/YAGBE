@@ -10,7 +10,7 @@ The scope of this project will NOT cover sound nor most mappers.
 How to Install:  
 
 Roadmap:  
-[  ] Working ROM to Hex  
-[  ] Test Instructions for opcodes required for test ROMs  
-[  ] ...  
-[  ] Profit?  
+- [ ] Working ROM to Hex  
+- [ ] Test Instructions for opcodes required for test ROMs  
+- [ ] ...  
+- [ ] Profit?  
