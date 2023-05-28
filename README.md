@@ -20,4 +20,5 @@ WIP
 - [ ] Test pixels  
 - [ ] Implement graphics (SDL2)  
 - [ ] Implement input and interrupts   
+- [ ] ...
 - [ ] Profit?  
