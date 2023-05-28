@@ -4,12 +4,15 @@ Yet Another Game Boy Emulator!
 This is my first serious emulator, built for educational purposes.  
 The scope of this project will NOT cover sound nor most mappers.  
   
-[Dev Log]()  
-[Technical Sheet](https://gbdev.io/pandocs)  
+[~~Dev Log~~]()  
+[Technical Reference](https://gbdev.io/pandocs)  
   
-How to Install:  
+## Screenshots
   
-Roadmap:  
+## How to Install:  
+WIP
+  
+## Roadmap:  
 - [ ] Working Disassembler (ROM to Memory, no mappers)  
 - [ ] Test Instructions for opcodes required for test ROMs  
 - [ ] Repeat above for all instructions  

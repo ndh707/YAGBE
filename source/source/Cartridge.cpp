@@ -15,6 +15,7 @@ void Cartridge::loadRom(std::string FilePath)
     
     long FileSize = ROM.tellg();
     
+    // Initialize size of Memory (already defined in .hpp)
     Memory = new u_int8_t[FileSize];
     
     ROM.seekg(std::ios::beg);

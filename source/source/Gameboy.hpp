@@ -9,6 +9,7 @@ struct Gameboy
 {
     CPU* cpu;
     MMU* memory;
+    Cartridge* cartridge;
 };
 
 #endif /* Gameboy_hpp */
