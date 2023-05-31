@@ -6,11 +6,13 @@
 
 struct MMU
 {
+    u_int8_t* Memory;
+    
     //Pointers
     Cartridge* cartridge;
     
     //Constructor
-    MMU(Cartridge*);
+    MMU(std::string);
     
     //
 };

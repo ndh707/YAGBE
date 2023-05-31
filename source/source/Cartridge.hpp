@@ -14,7 +14,8 @@
 struct Cartridge
 {
     // Dynamically sized array for ROM memory
-    u_int8_t* Memory;
+    u_int8_t* ROM;
+    u_int8_t Memory[0xFFFF];
     
     // RAM?
     
@@ -22,7 +23,11 @@ struct Cartridge
     // ROM File Path, Save File Path***
     Cartridge(std::string);
     
-    void loadRom(std::string);
+    // Fills ROM array with all the instruction from file
+    void init(std::string);
+    
+    // return array for the 48kb current memory
+    u_int8_t* loadMemory();
 };
 
 #endif /* Cartridge_hpp */

@@ -7,7 +7,9 @@ The scope of this project will NOT cover sound nor most mappers.
 [~~Dev Log~~]()  
 [Technical Reference](https://gbdev.io/pandocs)  
   
-## Screenshots
+## Screenshots  
+Woohoo! First step done!  
+![Snake.gb Disassembled](<img width="579" alt="Snake SS" src="https://github.com/ndh707/YAGBE/assets/90161063/a6d67f52-fe2b-4de5-8fa5-13834612e95c">)
   
 ## How to Install:  
 WIP

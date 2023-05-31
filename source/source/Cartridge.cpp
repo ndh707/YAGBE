@@ -4,21 +4,36 @@
 
 Cartridge::Cartridge(std::string FilePath)
 {
-    loadRom(FilePath);
+    init(FilePath);
 }
 
-void Cartridge::loadRom(std::string FilePath)
+void Cartridge::init(std::string FilePath)
 {
-    // Load binary from ROM given file path
-    std::ifstream ROM(FilePath, std::ios::binary);
-    ROM.seekg(0, std::ios::end);
+    std::cout << "Loading: " << FilePath << "\n\n";
     
-    long FileSize = ROM.tellg();
+    // Load binary from ROM file given file path
+    std::ifstream file(FilePath, std::ios::binary | std::ios::ate);
+    file.seekg(0, std::ios::end);
     
-    // Initialize size of Memory (already defined in .hpp)
-    Memory = new u_int8_t[FileSize];
+    if(file.is_open())
+    {
+        long FileSize = file.tellg();
+        
+        // Initialize size of ROM (already defined in .hpp)
+        ROM = new u_int8_t[FileSize];
+        
+        file.seekg(std::ios::beg);
+        file.read((char*)ROM, FileSize);
+        file.close();
+    }
     
-    ROM.seekg(std::ios::beg);
-    ROM.read((char*)Memory, FileSize);
-    ROM.close();
+    else{ std::cout << "Error: File failed to open \n"; }
+    
+}
+
+// returns array for 48kb current memory
+// simply returns ROM until mappers are implemented
+u_int8_t* Cartridge::loadMemory()
+{
+    return ROM;
 }

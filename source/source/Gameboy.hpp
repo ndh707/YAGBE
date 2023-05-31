@@ -7,9 +7,16 @@
 
 struct Gameboy
 {
+    // Pointers
     CPU* cpu;
-    MMU* memory;
-    Cartridge* cartridge;
+    MMU* mmu;
+    
+    // Constructors
+    Gameboy(std::string);
+    
+    // Test functions
+    void TestROMLoading();
+    
 };
 
 #endif /* Gameboy_hpp */
