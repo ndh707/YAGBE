@@ -15,7 +15,7 @@ Woohoo! First step done!
 WIP
   
 ## Roadmap:  
-- [ ] Working Disassembler (ROM to Memory, no mappers)  
+- [x] Working Disassembler (ROM to Memory, no mappers)  
 - [ ] Test Instructions for opcodes required for test ROMs  
 - [ ] Repeat above for all instructions  
 - [ ] Implement Instructions  
