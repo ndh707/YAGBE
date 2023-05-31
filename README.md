@@ -9,7 +9,7 @@ The scope of this project will NOT cover sound nor most mappers.
   
 ## Screenshots  
 Woohoo! First step done!  
-![Snake.gb Disassembled](<img width="579" alt="Snake SS" src="https://github.com/ndh707/YAGBE/assets/90161063/7d9bb745-81bf-4aa2-bd41-ab17a287aa34">)
+<img width="579" alt="Snake SS" src="https://github.com/ndh707/YAGBE/assets/90161063/7d9bb745-81bf-4aa2-bd41-ab17a287aa34">
   
 ## How to Install:  
 WIP
