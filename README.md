@@ -2,8 +2,8 @@
 Yet Another Game Boy Emulator!  
 
 This is my first serious emulator, built for educational purposes.  
-The scope of this project will NOT cover sound nor most mappers.  
-  
+The scope of this project will NOT cover sound, mappers, nor CB Instructions.  
+    
 [~~Dev Log~~]()  
 [Technical Reference](https://gbdev.io/pandocs)  
   
