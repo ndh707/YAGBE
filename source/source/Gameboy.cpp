@@ -38,17 +38,31 @@ void Gameboy::TestROMLoading()
 
 void Gameboy::TestRegisters()
 {
-    cpu->BC = 0x0051;
-    
-    std::cout << "A: ";
-    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->A) << std::endl;
+    std::cout << "AF: ";
+    std::cout << std::hex << std::setw(4) << std::setfill('0') << static_cast<int>(cpu->AF) << "\t";
     std::cout << "BC: ";
-    std::cout << "0x" << std::hex << std::setw(4) << std::setfill('0') << static_cast<int>(cpu->BC) << std::endl;
-    std::cout << "Memory[BC]: "<<std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(mmu->Memory[cpu->BC]) << std::endl;
-    
-    instruction->printOpcodeHex(0x0A);
+    std::cout << std::hex << std::setw(4) << std::setfill('0') << static_cast<int>(cpu->BC) << "\t";
+    std::cout << "DE: ";
+    std::cout << std::hex << std::setw(4) << std::setfill('0') << static_cast<int>(cpu->DE) << "\t";
+    std::cout << "HL: ";
+    std::cout << std::hex << std::setw(4) << std::setfill('0') << static_cast<int>(cpu->HL) << "\t";
     
     std::cout << "A: ";
-    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->A) << std::endl;
+    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->A) << "\t";
+    std::cout << "B: ";
+    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->B) << "\t";
+    std::cout << "C: ";
+    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->C) << "\t";
+    std::cout << "D: ";
+    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->D) << std::endl;
+    std::cout << "E: ";
+    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->E) << "\t";
+    std::cout << "F: ";
+    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->F) << "\t";
+    std::cout << "H: ";
+    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->H) << "\t";
+    std::cout << "L: ";
+    std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->L) << std::endl;
+    
 }
 
