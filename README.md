@@ -24,3 +24,6 @@ WIP
 - [ ] Implement input and interrupts   
 - [ ] ...
 - [ ] Profit?  
+  
+## Notes:  
+Check 0x20 for bugs

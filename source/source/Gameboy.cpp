@@ -10,7 +10,12 @@ int main()
     Gameboy* gameboy = new Gameboy(TEST_ROM);
     //gameboy->TestROMLoading();
     gameboy->TestRegisters();
-    std::cin.get();
+    gameboy->instruction->printOpcodeHex(0x04);
+    gameboy->TestRegisters();
+    gameboy->instruction->printOpcodeHex(0x05);
+    gameboy->TestRegisters();
+    
+    
     return 0;
 }
 
@@ -45,7 +50,7 @@ void Gameboy::TestRegisters()
     std::cout << "DE: ";
     std::cout << std::hex << std::setw(4) << std::setfill('0') << static_cast<int>(cpu->DE) << "\t";
     std::cout << "HL: ";
-    std::cout << std::hex << std::setw(4) << std::setfill('0') << static_cast<int>(cpu->HL) << "\t";
+    std::cout << std::hex << std::setw(4) << std::setfill('0') << static_cast<int>(cpu->HL) << "\n";
     
     std::cout << "A: ";
     std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->A) << "\t";
@@ -64,5 +69,16 @@ void Gameboy::TestRegisters()
     std::cout << "L: ";
     std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(*cpu->L) << std::endl;
     
+    std::cout << "Flag Z: ";
+    std::cout << ((*cpu->F & cpu->FLAG_Z) != 0) << "\t";
+    std::cout << "Flag N: ";
+    std::cout << ((*cpu->F & cpu->FLAG_N) != 0) << "\t";
+    std::cout << "Flag H: ";
+    std::cout << ((*cpu->F & cpu->FLAG_H) != 0) << "\t";
+    std::cout << "Flag C: ";
+    std::cout << ((*cpu->F & cpu->FLAG_C) != 0) << "\n";
+    
 }
+
+
 
